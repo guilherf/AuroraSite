@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+/* Primeira parte do Site */
+html{
+    scroll-behavior: smooth;
+}
+.imagem img{
+   height: 80px;
+   display: block;
+   margin-left: 20px;
+}
+section{
+    scroll-margin-top: 30px;
+}
+.linha-blur2{
+    width: 100%;
+    height: 20px;
+    margin: 40px auto;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 0px;
+    margin-top: -0.13rem;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    padding: 5px;
+    background-color: #ffffff;
+}
+
+.pages{
+    cursor: pointer;
+}
+.menu{
+    font-family: "Funnel Sans", sans-serif;
+    display: flex;
+    margin-left: 3.7em;
+    gap: 20px;
+
+}
+.menu a {
+    text-decoration: none;
+    color: rgb(87, 83, 83);
+}
+.menu a:hover{
+     transition: color 0.3s ease;
+     color: #53535381;
+}
+.menu a:active{
+    color: #53535381;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}  
+
+.Principal{
+    font-family: "Funnel Sans", sans-serif;
+    text-align: start;
+    background-image: url("imagens/testeground1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 250px;
+    background-repeat: no-repeat;
+}
+.Principal h1{
+    color: #4A403D;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 45px;
+    font-size: 60px;
+    margin-top: -20px;
+}
+.Principal p{
+    color: #7A716B;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    height: 10px;
+    font-size: 20px;
+}
+.CnhClinica{
+    padding: 17px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+  margin-right: 20px;
+  gap: 15px;
+  background-color: #B7927F;
+  outline: 3px #B7927F solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.btn:hover {
+  background-color: transparent;
+}
+.CnhClinica:hover{
+    letter-spacing: 3px;
+  background-color: #B7927F;
+  color: hsl(0, 0%, 0%);
+  box-shadow: rgba(0, 0, 0, 0.329) 0px 7px 29px 0px;
+}
+.CnhClinica:after{
+  letter-spacing: 3px;
+  background-color: hsl(34, 68%, 73%);
+  color: hsl(32, 100%, 72%);
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+.Servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 300px;
+    text-align: center;
+}
+
+.texto1 h2 {
+    font-family: "Funnel Sans", sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgb(161, 130, 100);
+    color: #6b5954;
+    margin-top: -10rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+
+.grupo-card{
+    position: relative;
+    width: 220px;
+    height: 330px;
+}
+
+.card1, .card2, .card3, .card4{
+    margin-top: 2.5rem;
+    position: relative;
+    width: 220px;
+    height: 330px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid #B7927F;
+    box-shadow: #e7b49a 0px 0px 0px 0px;
+}
+/* Segunda parte do Site */
+.Abordagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 300px;
+    text-align: center;
+}
+.linha-blur{
+    width: 100%;
+    height: 8px;
+    margin: 40px auto;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 0 30px rgba(231, 180, 154, 0.527);
+    overflow: hidden;
+    margin-top: -5rem;
+}
+.texto2 h1 {
+    font-family: sans-serif;
+    margin-top: -13rem;
+    color: #6b5954;
+    font-size: 45px;
+}
+.Adbimagem {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+    flex-wrap: nowrap;
+    margin-top: -4rem;
+    box-shadow: 30px rgba(231, 180, 154, 0.527);
+}
+.Adbimagem img {
+    width: 100px;
+    height: auto;
+}
+.Text3 p {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 37.4rem;
+
+
+}
+

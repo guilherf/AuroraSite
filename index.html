@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora Plena</title>
+</head>
+<header>
+    <!--Mudar a imagenm de logo muito imcopativel ta feio-->
+    <div class="imagem">
+        <img src="/imagens/logo.png" alt="Logo da Clínica">
+    </div>
+    <nav class="menu">
+    <a href="#Principal" class="page1">Início</a>
+    <a href="#Serviços" class="page2">Especialidades</a>
+    <a href="#" class="page3">Nossa Abordagem</a>
+    <a href="#" class="page4">Quem somos</a>
+    <a href="#" class="page5">Agendamento</a>
+
+    </nav>
+    <button class="btn">Agendar Consulta</button>    
+</header>
+<body>
+    <link rel="stylesheet" href="styles.css">
+    <section id="Principal">
+    <div class="Principal">
+        <h1>Cuidado integral para</h1>
+        <h1>sua saúde e bem-estar</h1>
+        <p>Uma abordagem humanizada e acolhedora</p>
+        <p>para o seu equilibrio fisico e mental</p>
+        <button type="button" class="CnhClinica">Conheça nossa Clinica</button>
+
+        </div>
+        </section>
+        <div class="linha-blur2"></div>
+        <section id="Serviços">
+            
+    <div class="Servicos">
+        <div class="texto1">
+        <h2 >Nossos Serviços</h2>
+        </div>
+<div class="cards">
+    <div class="grupo-card">
+        <div class="card1">aaa</div>
+    </div>
+
+    <div class="grupo-card">
+        <div class="card2">aaa</div>
+    </div>
+
+    <div class="grupo-card">
+        <div class="card3">aaa</div>
+    </div>
+
+    <div class="grupo-card">
+        <div class="card4">aaa</div>
+    </div>
+</div>
+    </section>
+    <div class="linha-blur"></div>
+    <div class="Abordagem">
+        <div class="texto2">
+        <h1>Nossa Abordagem: os Três Pilares do Bem-Estar</h1>
+        </div>
+        <div class="Adbimagem">
+        <img src="/imagens/coração.png" alt="Coração">
+        <img src="/imagens/Correto.png" alt="correto">
+        <img src="/imagens/Folha.png" alt="planta">
+        </div>
+             <div class="Text3">
+            <p data-i18n="1">Acolhimento Não</p>
+            <p data-i18n="2">Diagnostico Personalizado</p>
+            <p data-i18n="3">Saúde Continua</p>
+        </div>
+        
+        
+    </div>
+    <div class="QuemSomos">
+        <h1>Equipe Médica</h1>
+        <div class="medicos1"></div>
+        <div class="medicos1"></div>
+        <div class="medicos1"></div>
+        <div class="medicos1"></div>
+        <h1>Depoimentos</h1>
+        <div class="comentarios"></div>
+        <div class="comentarios"></div>
+        <div class="comentarios"></div>
+    </div>
+    <div class="Consulta">
+        <h1>Agende sua Consulta</h1>
+        <p>começe sua jornada para uma vida mais saudável</p>
+        <button type="button" class="Agendar">Agendar Consulta</button>
+    </div>
+</body>
+<script>
+    fetch('en.json')
+        .then((response) => response.json())
+        .then((texts) => {
+            document.querySelectorAll('[data-i18n]').forEach((element) => {
+                const key = element.getAttribute('data-i18n');
+                if (texts[key]) {
+                    element.textContent = texts[key];
+                }
+            });
+        });
+</script>
+<footer>
+    <img src="" alt="Logo Clinica" class="logoFooter">
+        <div class="pages"><p>Inicio</p></div>
+        <div class="pages"><p>Especialidades</p></div>
+        <div class="pages"><p>Nossa Abordagem</p></div>
+        <div class="pages"><p>Quem somos</p></div>
+        <div class="pages"><p>Agendamento</p></div>
+        <div class="pages"><p>Agendar Consulta</p></div>
+
+        <img src="" alt="instagram" class="icons">
+        <img src="" alt="facebook" class="icons">
+        <img src="" alt="twitter" class="icons">
+
+    <p>© 2024 Aurora Plena. Todos os direitos reservados.</p>
+</footer>
+</html>
