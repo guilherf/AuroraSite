@@ -217,12 +217,15 @@ body{
     width: 100px;
     height: auto;
 }
-.Text3 p {
+.pilar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pilar p {
     font-family: sans-serif;
     font-size: 20px;
-    text-align: center;
-    margin-right: 37.4rem;
-
-
+    margin-top: 12px;
 }
 
