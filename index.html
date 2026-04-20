@@ -2,6 +2,7 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aurora Plena</title>
@@ -26,7 +27,7 @@
     <nav class="menu">
         <a href="#Principal" class="page1" data-i18n="4">Início</a>
         <a href="#Serviços" class="page2" data-i18n="5">Especialidades</a>
-        <a href="#" class="page3" data-i18n="6">Nossa Abordagem</a>
+        <a href="#Abordagem" class="page3" data-i18n="6">Nossa Abordagem</a>
         <a href="#" class="page4" data-i18n="7">Quem somos</a>
         <a href="#" class="page5" data-i18n="8">Agendamento</a>
 
@@ -35,7 +36,6 @@
 </header>
 
 <body>
-    <link rel="stylesheet" href="styles.css">
     <section id="Principal">
         <div class="Principal">
             <h1 data-i18n="10">Cuidado integral para</h1>
@@ -71,56 +71,68 @@
                 </div>
             </div>
         </div>
-        
-<div class="linha-blur"></div>
-    </section>
-    <div class="Abordagem">
-        <div class="texto2">
-            <h1 data-i18n="16">Nossa Abordagem: os Três Pilares do Bem-Estar</h1>
-        </div>
-        <div class="Adbimagem">
-            <div class="pilar">
-                <img src="/imagens/coração.png" alt="Coração">
-                <p data-i18n="1" class="dnh">Acolhimento humanizado</p>
-                <div class="subtexto1">
-                    <p data-i18n="22">O acolhimento na saúde vai muito além do procedimento técnico; é o ato de enxergar
-                        a pessoa por trás do paciente, transformando o cuidado em uma ponte de dignidade, escuta ativa e
-                        humanidade.</p>
-                </div>
 
+        <div class="linha-blur"></div>
+    </section>
+    <section id="Abordagem">
+        <div class="Abordagem">
+            <div class="texto2">
+                <h1 data-i18n="16">Nossa Abordagem: os Três Pilares do Bem-Estar</h1>
             </div>
-            <div class="pilar">
-                <img src="/imagens/Correto.png" alt="correto">
-                <p data-i18n="2" class="dnh">Diagnóstico personalizado</p>
-                <div class="subtexto1">
-                    <p data-i18n="23">O diagnóstico personalizado é a arte de traduzir a complexidade do código genético
-                        e da história de vida em uma estratégia única de cura, garantindo que cada paciente receba o
-                        tratamento certo, na dose certa e no momento exato.</p>
+            <div class="Adbimagem">
+                <div class="pilar">
+                    <!-- <img src="/imagens/coração.png" alt="Coração"> -->
+                    <i class="bi bi-suit-heart-fill icone-bt"></i>
+                    <p data-i18n="1" class="dnh">Acolhimento humanizado</p>
+                    <div class="subtexto1">
+                        <p data-i18n="22">O acolhimento na saúde vai muito além do procedimento técnico; é o ato de
+                            enxergar
+                            a pessoa por trás do paciente, transformando o cuidado em uma ponte de dignidade, escuta
+                            ativa e
+                            humanidade.</p>
+                    </div>
+
+                </div>
+                <div class="pilar">
+                    <!-- <img src="/imagens/Correto.png" alt="correto"> -->
+                    <i class="bi bi-check-lg icone-bt" id="icone-check"></i>
+                    <p data-i18n="2" class="dnh teste">Diagnóstico personalizado</p>
+                    <div class="subtexto1 teste">
+                        <p data-i18n="23">O diagnóstico personalizado é a arte de traduzir a complexidade do código
+                            genético
+                            e da história de vida em uma estratégia única de cura, garantindo que cada paciente receba o
+                            tratamento certo, na dose certa e no momento exato.</p>
+                    </div>
+                </div>
+                <div class="pilar">
+                    <!-- <img src="/imagens/Folha.png" alt="planta"> -->
+                    <i class="bi bi-flower3 icone-bt"></i>
+                    <p data-i18n="3" class="dnh">Saúde contínua</p>
+                    <div class="subtexto1">
+                        <p data-i18n="24">A saúde contínua é o compromisso de cuidar da vida em todas as suas fases,
+                            transformando o atendimento pontual em um fluxo ininterrupto de prevenção, acompanhamento e
+                            bem-estar que acompanha o paciente para além das paredes do consultório.</p>
+                    </div>
                 </div>
             </div>
-            <div class="pilar">
-                <img src="/imagens/Folha.png" alt="planta">
-                <p data-i18n="3" class="dnh">Saúde contínua</p>
-                <div class="subtexto1">
-                    <p data-i18n="24">A saúde contínua é o compromisso de cuidar da vida em todas as suas fases,
-                        transformando o atendimento pontual em um fluxo ininterrupto de prevenção, acompanhamento e
-                        bem-estar que acompanha o paciente para além das paredes do consultório.</p>
-                </div>
-            </div>
-        </div>
+    </section>
 
 
     </div>
+    <div class="linha-blur3"></div>
     <div class="QuemSomos">
-        <h1 data-i18n="17">Equipe Médica</h1>
-        <div class="medicos1"></div>
-        <div class="medicos1"></div>
-        <div class="medicos1"></div>
-        <div class="medicos1"></div>
         <h1 data-i18n="18">Depoimentos</h1>
-        <div class="comentarios"></div>
-        <div class="comentarios"></div>
-        <div class="comentarios"></div>
+        <div class="comentarios">
+            <div class="grupo-comentarios">
+                <div class="comentario1"></div>
+            </div>
+            <div class="grupo-comentarios">
+                <div class="comentario2"></div>
+            </div>
+            <div class="grupo-comentarios">
+                <div class="comentario3"></div>
+            </div>
+        </div>
     </div>
     <div class="Consulta">
         <h1 data-i18n="19">Agende sua Consulta</h1>
