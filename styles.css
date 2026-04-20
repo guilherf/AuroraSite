@@ -4,6 +4,7 @@
 /* Primeira parte do Site */
 html {
     scroll-behavior: smooth;
+
 }
 
 .imagem img {
@@ -16,11 +17,11 @@ section {
     scroll-margin-top: 30px;
 }
 
-.linha-blur2 {
+.linha-blur {
     width: 100%;
     height: 20px;
     margin: 40px auto;
-    z-index: 2;
+    z-index: 20000;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -199,75 +200,67 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #ffeee3;
-    padding: 300px;
+    /* Padding reduzido para ser responsivo, ajuste conforme necessário */
+    padding: 80px 20px; 
     text-align: center;
-}
-
-.linha-blur {
-    width: 100%;
-    height: 8px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 0 30px rgba(231, 180, 154, 0.527);
-
+    min-height: 100vh; /* Garante que a seção ocupe a tela toda e centralize verticalmente */
 }
 
 .texto2 h1 {
     font-family: sans-serif;
-    margin-top: -13rem;
     color: #6b5954;
     font-size: 45px;
+    margin-bottom: 50px; /* Espaço entre o título e os pilares */
+    /* Removido margin-top negativo para evitar desalinhamento */
 }
 
 .Adbimagem {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 200px;
-    flex-wrap: nowrap;
-    margin-top: -4rem;
-    box-shadow: 30px rgba(231, 180, 154, 0.527);
-}
-
-.Adbimagem img {
-    width: 100px;
-    height: auto;
+    align-items: flex-start; /* Alinha os pilares pelo topo */
+    gap: 50px; /* Reduzi o gap de 200px que é muito largo para telas normais */
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    width: 100%;
+    max-width: 1200px;
 }
 
 .pilar {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    flex: 1; /* Faz com que cada pilar ocupe o mesmo espaço */
+    min-width: 250px; /* Evita que fiquem muito apertados */
 }
 
 .dnh {
     font-family: sans-serif;
     font-size: 25px;
-    margin-top: 12px;
+    margin: 20px 0 10px 0; /* Espaçamento equilibrado */
     color: #4A403D;
+    font-weight: bold;
 }
 
 .subtexto1 {
-    text-align: center;
-    justify-content: center;
     font-family: sans-serif;
-    margin-top: -25px;
-    font-size: 20px;
+    font-size: 18px;
     color: #7A716B;
+    line-height: 1.6; /* Melhora a leitura do texto longo */
+    max-width: 300px; /* Limita a largura do parágrafo para ficar elegante */
+}
+
+.subtexto1 p {
+    margin: 0; /* Remove margens padrão do parágrafo interno */
 }
 
 .icone-bt {
-    color: #ffeee3;
+    color: #000000; /* Mudei para branco puro para destacar no fundo bege */
     font-size: 5em;
-    text-shadow: 1px 1px 10px #aa8c7961;
+    filter: drop-shadow(0px 4px 10px rgba(170, 140, 121, 0.3));
 }
 
+/* Removidas as classes .teste e ajustes manuais para que o Flexbox cuide de tudo sozinho */
 #icone-check {
-    font-size: 7em;
-    margin-top: -25px;
+    font-size: 5em; /* Padronizado com os outros ícones */
 }
 
 .teste {
@@ -275,27 +268,239 @@ body {
     top: -15px;
 }
 
-.linha-blur3 {
-    width: 100%;
-    height: 8px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.18);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(12px);
-    box-shadow: 0 0 30px rgba(231, 180, 154, 0.527);
-}
-
 .QuemSomos {
     display: block;
     text-align: center;
-    padding: 300px;
+    padding: 250px;
 }
 
-.QuemSomos h1 {
+.QuemSomos h2 {
     position: relative;
     font-family: sans-serif;
     font-size: 50px;
     color: #4A403D;
     top: -15rem;
 }
+#ProfissaText{
+    margin-top: -17px;
+}
+.pessoastbr {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
 
+.grupo-pessoas {
+    position: relative;
+    width: 220px;
+    height: 330px;
+}
+
+.pessoas1,
+.pessoas2,
+.pessoas3 {
+    position: relative;
+    top: -9rem;
+    width: 220px;
+    height: 330px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid #B7927F;
+    box-shadow: #e7b49a 0px 0px 0px 0px;
+}
+#DepoText{
+    position: relative;
+    text-align: center;
+    top: -80px;
+}
+.comentariostbr {
+        display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+}
+.grupo-comentarios{
+        position: relative;
+    width: 220px;
+    height: 330px;
+}
+.comentarios1, .comentarios2, .comentarios3 {
+    position: relative;
+    width: 220px;
+    height: 330px;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    border: 1px solid #B7927F;
+    box-shadow: #e7b49a 0px 0px 0px 0px;
+}
+/*Terceira parte do Site*/
+.Consulta {
+    font-family: "Funnel Sans", sans-serif;
+    position: relative;    /* Necessário para o fundo se prender aqui */
+    overflow: hidden;      /* Corta o "vazamento" do blur nas bordas */
+    padding: 150px;   /* Ajustei o padding para não ficar exagerado */
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centraliza tudo horizontalmente */
+    text-align: center;    /* Garante o alinhamento do texto */
+}
+
+/* Criando a camada do fundo separada */
+.Consulta::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    
+    /* Sua imagem vai aqui */
+    background-image: url("imagens/AgendaBackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* O BLUR QUE VOCÊ QUERIA */
+    filter: blur(10px); 
+    
+    /* Dá um leve zoom para o blur não criar bordas brancas */
+    transform: scale(1.1); 
+    
+    z-index: -1; /* Joga para trás do texto */
+}
+
+.Consulta h2 {
+    font-family: sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    font-size: 40px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    position: relative; /* Garante que o texto fique por cima */
+}
+
+.Consulta p {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #2D4A36;
+        font-weight: 300;
+    margin-bottom: 30px;
+    position: relative; /* Garante que o texto fique por cima */
+}
+.Agendar {
+    background-color: #2D5A27; /* Verde escuro para o botão */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px; /* Bordas arredondadas são mais amigáveis */
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Agendar:hover {
+    background-color: #1e3d1a;
+    transform: scale(1.05);
+}
+/* Container Principal do Footer */
+footer {
+    background-color: #ffffff; /* Ou use o bege suave #ffeee3 para combinar */
+    padding: 60px 20px 20px 20px;
+    border-top: 1px solid #B7927F; /* Linha sutil no topo */
+    font-family: "Funnel Sans", sans-serif;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;   /* Margem automática na esquerda e direita */
+    margin-right: auto;  /* centraliza a div em si, além do conteúdo */
+    margin-bottom: 40px;
+}
+
+.pages-container {
+    display: flex;       /* Mudado de block para flex */
+    justify-content: center;
+    flex-wrap: wrap;     /* Para não quebrar em telas pequenas */
+    gap: 30px;
+    align-items: center;
+}
+.finalpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza tudo horizontalmente */
+    text-align: center;
+    width: 100%;
+}
+.pages-container a:hover {
+    color: #B7927F; /* Cor de destaque ao passar o mouse */
+    transform: translateY(-2px); /* Efeito sutil de subida */
+}
+
+/* Links de Navegação */
+.finalpage a {
+    text-decoration: none;
+    color: #575353;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin: 0; /* O gap do container já resolve o espaço */
+}
+
+.finalpage a:hover {
+    color: #B7927F;
+}
+
+/* Alinhamento dos Links (opcional: colocar em linha) */
+.finalpage .pages-container { /* Se quiser agrupar os <a> futuramente */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Ícones de Redes Sociais */
+.social-icons {
+    display: flex;           /* Transforma em um container flexível */
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;      /* Alinha verticalmente caso tenham alturas diferentes */
+    width: 100%;             /* Garante que a div ocupe a largura total da tela */
+    margin: 20px 0;          /* Espaço opcional em cima e embaixo */
+}
+
+.icons {
+    font-size: 30px;         /* Ajusta o tamanho se estiver usando Bootstrap Icons */
+    width: 60px;             /* Mantém suas configurações */
+    height: 60px;
+    display: flex;           /* Importante para centralizar o desenho do ícone dentro do círculo/box */
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.icons:hover {
+    transform: scale(1.1);
+}
+.Imagem-footer {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.copyright {
+    font-size: 14px;
+    color: #7A716B;
+    margin-top: 20px;
+    opacity: 0.8;
+}
