@@ -124,6 +124,8 @@ body {
     border: none;
     cursor: pointer;
     transition: 400ms;
+    text-decoration: none;
+    color: inherit;
 }
 
 .btn:hover {
@@ -152,7 +154,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: white;
-    padding: 300px;
+    padding: 120px 20px 80px;
     text-align: center;
 }
 
@@ -161,36 +163,42 @@ body {
     font-size: 50px;
     text-shadow: 2px 2px 4px rgb(161, 130, 100);
     color: #6b5954;
-    margin-top: -10rem;
+    margin-bottom: 40px;
 }
 
-.cards {
+.servico-cards {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.grupo-card {
-    position: relative;
-    width: 220px;
-    height: 330px;
-}
-
-.card1,
-.card2,
-.card3,
-.card4 {
-    margin-top: 2.5rem;
-    position: relative;
-    width: 220px;
-    height: 330px;
-    z-index: 2;
+.servico-card {
+    width: 260px;
     background-color: rgb(255, 255, 255);
     border-radius: 24px;
     border: 1px solid #B7927F;
-    box-shadow: #e7b49a 0px 0px 0px 0px;
+    box-shadow: 0 18px 30px rgba(183, 146, 127, 0.12);
+    padding: 28px;
+    text-align: left;
+}
+
+.servico-card h3 {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #4A403D;
+    margin-bottom: 15px;
+}
+
+.servico-card p {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #7A716B;
+    line-height: 1.7;
+    margin: 0;
 }
 
 /* Segunda parte do Site */
@@ -201,25 +209,30 @@ body {
     justify-content: center;
     background-color: #ffeee3;
     /* Padding reduzido para ser responsivo, ajuste conforme necessário */
-    padding: 80px 20px; 
+    padding: 80px 20px;
     text-align: center;
-    min-height: 100vh; /* Garante que a seção ocupe a tela toda e centralize verticalmente */
+    min-height: 100vh;
+    /* Garante que a seção ocupe a tela toda e centralize verticalmente */
 }
 
 .texto2 h1 {
     font-family: sans-serif;
     color: #6b5954;
     font-size: 45px;
-    margin-bottom: 50px; /* Espaço entre o título e os pilares */
+    margin-bottom: 50px;
+    /* Espaço entre o título e os pilares */
     /* Removido margin-top negativo para evitar desalinhamento */
 }
 
 .Adbimagem {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinha os pilares pelo topo */
-    gap: 50px; /* Reduzi o gap de 200px que é muito largo para telas normais */
-    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    align-items: flex-start;
+    /* Alinha os pilares pelo topo */
+    gap: 50px;
+    /* Reduzi o gap de 200px que é muito largo para telas normais */
+    flex-wrap: wrap;
+    /* Permite quebrar linha em telas menores */
     width: 100%;
     max-width: 1200px;
 }
@@ -228,14 +241,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex: 1; /* Faz com que cada pilar ocupe o mesmo espaço */
-    min-width: 250px; /* Evita que fiquem muito apertados */
+    flex: 1;
+    /* Faz com que cada pilar ocupe o mesmo espaço */
+    min-width: 250px;
+    /* Evita que fiquem muito apertados */
 }
 
 .dnh {
     font-family: sans-serif;
     font-size: 25px;
-    margin: 20px 0 10px 0; /* Espaçamento equilibrado */
+    margin: 20px 0 10px 0;
+    /* Espaçamento equilibrado */
     color: #4A403D;
     font-weight: bold;
 }
@@ -244,23 +260,28 @@ body {
     font-family: sans-serif;
     font-size: 18px;
     color: #7A716B;
-    line-height: 1.6; /* Melhora a leitura do texto longo */
-    max-width: 300px; /* Limita a largura do parágrafo para ficar elegante */
+    line-height: 1.6;
+    /* Melhora a leitura do texto longo */
+    max-width: 300px;
+    /* Limita a largura do parágrafo para ficar elegante */
 }
 
 .subtexto1 p {
-    margin: 0; /* Remove margens padrão do parágrafo interno */
+    margin: 0;
+    /* Remove margens padrão do parágrafo interno */
 }
 
 .icone-bt {
-    color: #000000; /* Mudei para branco puro para destacar no fundo bege */
+    color: #000000;
+    /* Mudei para branco puro para destacar no fundo bege */
     font-size: 5em;
     filter: drop-shadow(0px 4px 10px rgba(170, 140, 121, 0.3));
 }
 
 /* Removidas as classes .teste e ajustes manuais para que o Flexbox cuide de tudo sozinho */
 #icone-check {
-    font-size: 5em; /* Padronizado com os outros ícones */
+    font-size: 5em;
+    /* Padronizado com os outros ícones */
 }
 
 .teste {
@@ -271,107 +292,157 @@ body {
 .QuemSomos {
     display: block;
     text-align: center;
-    padding: 250px;
+    padding: 120px 20px 80px;
 }
 
 .QuemSomos h2 {
-    position: relative;
     font-family: sans-serif;
-    font-size: 50px;
+    font-size: 48px;
     color: #4A403D;
-    top: -15rem;
+    margin: 0 auto 40px;
+    max-width: 1000px;
 }
-#ProfissaText{
-    margin-top: -17px;
-}
-.pessoastbr {
+
+.profissionais {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     gap: 30px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 60px;
 }
 
-.grupo-pessoas {
-    position: relative;
-    width: 220px;
-    height: 330px;
-}
-
-.pessoas1,
-.pessoas2,
-.pessoas3 {
-    position: relative;
-    top: -9rem;
-    width: 220px;
-    height: 330px;
-    z-index: 2;
+.profissional-card {
+    width: 260px;
     background-color: rgb(255, 255, 255);
-    border-radius: 24px;
+    border-radius: 28px;
     border: 1px solid #B7927F;
-    box-shadow: #e7b49a 0px 0px 0px 0px;
-}
-#DepoText{
-    position: relative;
+    box-shadow: 0 18px 30px rgba(183, 146, 127, 0.12);
+    overflow: hidden;
     text-align: center;
-    top: -80px;
 }
+
+.profissional-thumb {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+.profissional-card h3 {
+    margin: 24px 0 8px;
+    font-family: sans-serif;
+    font-size: 22px;
+    color: #4A403D;
+}
+
+.profissional-card span {
+    display: block;
+    margin-bottom: 24px;
+    color: #7A716B;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#DepoText {
+    text-align: center;
+    margin-top: 40px;
+}
+
 .comentariostbr {
-        display: flex;
+    display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 65px;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
-.grupo-comentarios{
-        position: relative;
-    width: 220px;
-    height: 330px;
+
+.grupo-comentarios {
+    max-width: 350px;
+    min-width: 260px;
 }
-.comentarios1, .comentarios2, .comentarios3 {
-    position: relative;
-    width: 220px;
-    height: 330px;
-    z-index: 2;
+
+.comentarios1,
+.comentarios2,
+.comentarios3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 320px;
     background-color: rgb(255, 255, 255);
     border-radius: 24px;
     border: 1px solid #B7927F;
     box-shadow: #e7b49a 0px 0px 0px 0px;
+    padding: 24px;
+    gap: 60px;
 }
+
+.comentariostext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.comentariostext p {
+    margin: 0;
+    color: #7A716B;
+    line-height: 1.7;
+}
+
+.image-foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
 /*Terceira parte do Site*/
 .Consulta {
     font-family: "Funnel Sans", sans-serif;
-    position: relative;    /* Necessário para o fundo se prender aqui */
-    overflow: hidden;      /* Corta o "vazamento" do blur nas bordas */
-    padding: 150px;   /* Ajustei o padding para não ficar exagerado */
+    position: relative;
+    /* Necessário para o fundo se prender aqui */
+    overflow: hidden;
+    /* Corta o "vazamento" do blur nas bordas */
+    padding: 120px 20px 100px;
+    /* Ajustei o padding para não ficar exagerado */
     display: flex;
     flex-direction: column;
-    align-items: center;   /* Centraliza tudo horizontalmente */
-    text-align: center;    /* Garante o alinhamento do texto */
+    align-items: center;
+    /* Centraliza tudo horizontalmente */
+    text-align: center;
+    /* Garante o alinhamento do texto */
 }
 
-/* Criando a camada do fundo separada */
 .Consulta::before {
     content: "";
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
-    
+
     /* Sua imagem vai aqui */
     background-image: url("imagens/AgendaBackground.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
+
     /* O BLUR QUE VOCÊ QUERIA */
-    filter: blur(10px); 
-    
+    filter: blur(10px);
+
     /* Dá um leve zoom para o blur não criar bordas brancas */
-    transform: scale(1.1); 
-    
-    z-index: -1; /* Joga para trás do texto */
+    transform: scale(1.1);
+
+    z-index: -1;
+    /* Joga para trás do texto */
 }
 
 .Consulta h2 {
@@ -381,7 +452,8 @@ body {
     font-size: 40px;
     color: #FFFFFF;
     margin-bottom: 10px;
-    position: relative; /* Garante que o texto fique por cima */
+    position: relative;
+    /* Garante que o texto fique por cima */
 }
 
 .Consulta p {
@@ -389,61 +461,77 @@ body {
     font-size: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     color: #2D4A36;
-        font-weight: 300;
+    font-weight: 300;
     margin-bottom: 30px;
-    position: relative; /* Garante que o texto fique por cima */
+    position: relative;
+    /* Garante que o texto fique por cima */
 }
+
 .Agendar {
-    background-color: #2D5A27; /* Verde escuro para o botão */
+    background-color: #2D5A27;
+    /* Verde escuro para o botão */
     color: white;
     border: none;
     padding: 15px 30px;
-    border-radius: 50px; /* Bordas arredondadas são mais amigáveis */
+    border-radius: 50px;
+    /* Bordas arredondadas são mais amigáveis */
     font-weight: bold;
     transition: 0.3s;
-    cursor: pointer;
-}
+    cursor: pointer;    text-decoration: none;
+    display: inline-block;}
 
 .Agendar:hover {
     background-color: #1e3d1a;
     transform: scale(1.05);
 }
+
 /* Container Principal do Footer */
 footer {
-    background-color: #ffffff; /* Ou use o bege suave #ffeee3 para combinar */
+    background-color: #ffffff;
+    /* Ou use o bege suave #ffeee3 para combinar */
     padding: 60px 20px 20px 20px;
-    border-top: 1px solid #B7927F; /* Linha sutil no topo */
+    border-top: 1px solid #B7927F;
+    /* Linha sutil no topo */
     font-family: "Funnel Sans", sans-serif;
 }
 
 .footer-top {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    margin-left: auto;   /* Margem automática na esquerda e direita */
-    margin-right: auto;  /* centraliza a div em si, além do conteúdo */
+    margin-left: auto;
+    /* Margem automática na esquerda e direita */
+    margin-right: auto;
+    /* centraliza a div em si, além do conteúdo */
     margin-bottom: 40px;
 }
 
 .pages-container {
-    display: flex;       /* Mudado de block para flex */
+    display: flex;
+    /* Mudado de block para flex */
     justify-content: center;
-    flex-wrap: wrap;     /* Para não quebrar em telas pequenas */
+    flex-wrap: wrap;
+    /* Para não quebrar em telas pequenas */
     gap: 30px;
     align-items: center;
 }
+
 .finalpage {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centraliza tudo horizontalmente */
+    align-items: center;
+    /* Centraliza tudo horizontalmente */
     text-align: center;
     width: 100%;
 }
+
 .pages-container a:hover {
-    color: #B7927F; /* Cor de destaque ao passar o mouse */
-    transform: translateY(-2px); /* Efeito sutil de subida */
+    color: #B7927F;
+    /* Cor de destaque ao passar o mouse */
+    transform: translateY(-2px);
+    /* Efeito sutil de subida */
 }
 
 /* Links de Navegação */
@@ -452,7 +540,8 @@ footer {
     color: #575353;
     font-size: 16px;
     transition: all 0.3s ease;
-    margin: 0; /* O gap do container já resolve o espaço */
+    margin: 0;
+    /* O gap do container já resolve o espaço */
 }
 
 .finalpage a:hover {
@@ -460,7 +549,8 @@ footer {
 }
 
 /* Alinhamento dos Links (opcional: colocar em linha) */
-.finalpage .pages-container { /* Se quiser agrupar os <a> futuramente */
+.finalpage .pages-container {
+    /* Se quiser agrupar os <a> futuramente */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -469,18 +559,26 @@ footer {
 
 /* Ícones de Redes Sociais */
 .social-icons {
-    display: flex;           /* Transforma em um container flexível */
-    justify-content: center;  /* Centraliza horizontalmente */
-    align-items: center;      /* Alinha verticalmente caso tenham alturas diferentes */
-    width: 100%;             /* Garante que a div ocupe a largura total da tela */
-    margin: 20px 0;          /* Espaço opcional em cima e embaixo */
+    display: flex;
+    /* Transforma em um container flexível */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Alinha verticalmente caso tenham alturas diferentes */
+    width: 100%;
+    /* Garante que a div ocupe a largura total da tela */
+    margin: 20px 0;
+    /* Espaço opcional em cima e embaixo */
 }
 
 .icons {
-    font-size: 30px;         /* Ajusta o tamanho se estiver usando Bootstrap Icons */
-    width: 60px;             /* Mantém suas configurações */
+    font-size: 30px;
+    /* Ajusta o tamanho se estiver usando Bootstrap Icons */
+    width: 60px;
+    /* Mantém suas configurações */
     height: 60px;
-    display: flex;           /* Importante para centralizar o desenho do ícone dentro do círculo/box */
+    display: flex;
+    /* Importante para centralizar o desenho do ícone dentro do círculo/box */
     justify-content: center;
     cursor: pointer;
     align-items: center;
@@ -490,11 +588,36 @@ footer {
 .icons:hover {
     transform: scale(1.1);
 }
+
 .Imagem-footer {
     display: block;
     justify-content: center;
     align-items: center;
 
+}
+
+.image-foto {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+    background-image: url("imagens/perfil1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#foto1 {
+    background-image: url("imagens/perfil1.jpg");
+
+}
+
+#foto2 {
+    background-image: url("imagens/perfil2.jpg");
+}
+
+#foto3 {
+    background-image: url("imagens/perfil3.jpg");
 }
 
 
